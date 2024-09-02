@@ -11,7 +11,7 @@ import 'dart:io';
 /// Напишите приложение, где пользователь вводит строку и букву.
 /// Посчитайте сколько раз заданная буква входит в строку и выведите полученный результат,
 /// а также индекс первого вхождения буквы в строку, в терминал.
-void stringsTask3() {
+void _stringsTask3() {
   stdout.write("Input string: ");
   String? string = stdin.readLineSync();
   stdout.write("Input letter: ");
@@ -25,7 +25,7 @@ void stringsTask3() {
 
 /// Напишите приложение, где пользователь вводит строку и два символа (например а и в).
 /// Замените в строке все символы «а» на «в» и выведите полученный результат в терминал.
-void stringsTask4() {
+void _stringsTask4() {
   stdout.write("Input string: ");
   String? string = stdin.readLineSync();
   stdout.write("Input first letter: ");
@@ -40,7 +40,7 @@ void stringsTask4() {
 /// Напишите приложение, где пользователь вводит слово и на его основе создается новая переменная,
 /// сформированная из первого, среднего и последнего символов введенного слова.
 /// Полученный результат выведите в терминал. Например: «Привет!» -> «Пв!»
-void stringsTask5() {
+void _stringsTask5() {
   stdout.write("Input word: ");
   String? word = stdin.readLineSync();
 
@@ -51,7 +51,7 @@ void stringsTask5() {
 /// Напишите приложение, позволяющее пользователю вводить список целочисленных значений и число А,
 /// на которое необходимо уменьшить значения элементов списка, после чего добавить А добавить в начало списка.
 /// Выведите в терминал полученный результат.
-void listsTask3() {
+void _listsTask3() {
   print("Input list, separated with space:");
   List<int> list = stdin.readLineSync()!.split(' ').map(int.parse).toList();
   stdout.write("Print number A: ");
@@ -67,7 +67,7 @@ void listsTask3() {
 /// список вещественных значений и два числа (например а и в).
 /// Программа должна вставить число «а» на позицию «в».
 /// Выведите в терминал полученный результат.
-void listsTask4() {
+void _listsTask4() {
   print("Input list of doubles, separated with space:");
   List<double> list =
       stdin.readLineSync()!.split(' ').map(double.parse).toList();
@@ -84,7 +84,7 @@ void listsTask4() {
 /// Напишите приложение, позволяющее пользователю вводить
 /// список целочисленных значений и число А. Сформируйте новый список,
 /// значения элементов которого > А. Выведите в терминал полученный результат.
-void listsTask9() {
+void _listsTask9() {
   print("Input list, separated with space:");
   List<int> list = stdin.readLineSync()!.split(' ').map(int.parse).toList();
   stdout.write("Print number A: ");
@@ -101,7 +101,7 @@ void listsTask9() {
 /// Программа должна создать новый список из элементов,
 /// которые лежат в диапазоне от индекса «а» по «в».
 /// Выведите в терминал полученный результат.
-void listsTask16() {
+void _listsTask16() {
   print("Input list of strings, separated with space:");
   List<String> list = stdin.readLineSync()!.split(' ').toList();
   stdout.write("Input index A: ");
@@ -117,7 +117,7 @@ void listsTask16() {
 /// Напишите приложение, позволяющее пользователю вводить список целочисленных значений.
 /// Удалите все дублирующиеся значения и вычислите сумму оставшихся.
 /// Выведите в терминал полученный результат.
-void setsTask1() {
+void _setsTask1() {
   print("Input list, separated with space:");
   List<int> list = stdin.readLineSync()!.split(' ').map(int.parse).toList();
 
@@ -129,7 +129,7 @@ void setsTask1() {
 /// Напишите приложение, позволяющее пользователю вводить список целочисленных значений.
 /// Удалите все дублирующиеся значения и вычислите произведение оставшихся.
 /// Выведите в терминал полученный результат.
-void setsTask2() {
+void _setsTask2() {
   print("Input list, separated with space:");
   List<int> list = stdin.readLineSync()!.split(' ').map(int.parse).toList();
 
@@ -141,7 +141,7 @@ void setsTask2() {
 /// Напишите приложение, позволяющее пользователю вводить список целочисленных значений и число А.
 /// Сформируйте множество, значения элементов которого кратны А.
 /// Выведите в терминал полученный результат.
-void setsTask7() {
+void _setsTask7() {
   print("Input list, separated with space:");
   List<int> list = stdin.readLineSync()!.split(' ').map(int.parse).toList();
   stdout.write("Print number A: ");
@@ -156,7 +156,7 @@ void setsTask7() {
 /// Напишите приложение, позволяющее пользователю вводить два целочисленных множества А и В.
 /// Найдите их пересечение, рассчитайте сумму элементов, которые в него попадают
 /// и выведите в терминал полученный результат.
-void setsTask10() {
+void _setsTask10() {
   print("Input set A, separated with space:");
   Set<int> setA = stdin.readLineSync()!.split(' ').map(int.parse).toSet();
   print("Input set B, separated with space:");
@@ -171,7 +171,7 @@ void setsTask10() {
 /// Напишите приложение, позволяющее пользователю вводить Map<int, int> и два числа: А и В.
 /// Если в структуре нет элемента с ключом А, добавьте в Мар по ключу А значение В.
 /// Выведите Мар и значение, хранящееся по ключу А в терминал.
-void mapsTask4() {
+void _mapsTask4() {
   print("Input map of pairs formatted 'key,value' separated with space:");
   Map map = Map.fromEntries(stdin
       .readLineSync()!
@@ -192,7 +192,7 @@ void mapsTask4() {
 
 /// Напишите приложение, позволяющее пользователю вводить Map<int, String> и строку А.
 /// Удалите все элементы значения которых равны А И выведите в терминал полученный результат.
-void mapsTask5() {
+void _mapsTask5() {
   print("Input map of pairs formatted 'key,value' separated with space:");
   Map map = Map.fromEntries(stdin
       .readLineSync()!
@@ -211,7 +211,7 @@ void mapsTask5() {
 /// Напишите приложение, позволяющее пользователю вводить Map<int, double> и число А.
 /// Удалите все элементы значения ключей которых <= A.
 /// Выведите в терминал полученный результат и сумму всех значений Мар.
-void mapsTask10() {
+void _mapsTask10() {
   print("Input map of pairs formatted 'key,value' separated with space:");
   Map map = Map.fromEntries(stdin
       .readLineSync()!
@@ -231,44 +231,44 @@ void mapsTask10() {
 
 void demo() {
   print("--- Part 1 | Task 3 ---");
-  stringsTask3();
+  _stringsTask3();
 
   print("\n--- Part 1 | Task 4 ---");
-  stringsTask4();
+  _stringsTask4();
 
   print("\n--- Part 1 | Task 5 ---");
-  stringsTask5();
+  _stringsTask5();
 
   print("\n--- Part 2 | Task 3 ---");
-  listsTask3();
+  _listsTask3();
 
   print("\n--- Part 2 | Task 4 ---");
-  listsTask4();
+  _listsTask4();
 
   print("\n--- Part 2 | Task 9 ---");
-  listsTask9();
+  _listsTask9();
 
   print("\n--- Part 2 | Task 16 ---");
-  listsTask16();
+  _listsTask16();
 
   print("\n--- Part 3 | Task 1 ---");
-  setsTask1();
+  _setsTask1();
 
   print("\n--- Part 3 | Task 2 ---");
-  setsTask2();
+  _setsTask2();
 
   print("\n--- Part 3 | Task 7 ---");
-  setsTask7();
+  _setsTask7();
 
   print("\n--- Part 3 | Task 10 ---");
-  setsTask10();
+  _setsTask10();
 
   print("\n--- Part 4 | Task 4 ---");
-  mapsTask4();
+  _mapsTask4();
 
   print("\n--- Part 4 | Task 5 ---");
-  mapsTask5();
+  _mapsTask5();
 
   print("\n--- Part 4 | Task 10 ---");
-  mapsTask10();
+  _mapsTask10();
 }
