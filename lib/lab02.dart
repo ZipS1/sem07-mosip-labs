@@ -164,10 +164,6 @@ void _patternsTask17() {
     }
   };
 
-  // var {"id": _, "box": {"width": _, "height": _, "coords": {"x": x, "y": y}}} =
-  //     a;
-  // This do not work for some reason FIXME
-
   if (a
       case {
         "id": _,
@@ -359,13 +355,13 @@ void _controlflowTask11() {
 /// либо наоборот и выведите полученный результат в терминал. Реализуйте 2
 /// версии программы с разными подходами (if и switch).
 void _controlflowTask17() {
-  int? num;
+  double? num;
   late String temperature;
   bool isValidPrefix = false;
   while (num == null || isValidPrefix == false) {
     stdout.write("Input temperature in any degrees (ended with c of f): ");
     temperature = stdin.readLineSync()!;
-    num = int.tryParse(temperature.substring(0, temperature.length - 1));
+    num = double.tryParse(temperature.substring(0, temperature.length - 1));
 
     isValidPrefix = temperature.endsWith("c") || temperature.endsWith('f');
   }
