@@ -1,5 +1,5 @@
-import 'package:study/lab04.dart' as lab04;
+import 'package:study/lab05.dart' as lab05;
 
-void main(List<String> arguments) {
-  lab04.demo();
+void main() {
+  lab05.demo();
 }
