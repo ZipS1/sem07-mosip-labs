@@ -1,5 +1,5 @@
-import 'package:study/lab06.dart' as lab06;
+import 'package:study/lab07.dart' as lab07;
 
 void main() {
-  lab06.demo();
+  lab07.demo();
 }
